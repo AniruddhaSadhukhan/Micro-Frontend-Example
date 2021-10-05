@@ -25,7 +25,9 @@ customElements.define('mf-angular-a', mf_A);
 Note:
 The tag must contain a '-' in the name and should be kebab-case
 
-Create the run-mf script to run the mf 
+Create the run-mf script to run the mf
 
 Add it in the npm script array of package.json
 "serve": "./run-mf.sh"
+
+Data communication between the container app and this MF can be done by using @Input and @Output decorators in the angular microfrontend components

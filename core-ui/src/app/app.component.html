@@ -1,7 +1,58 @@
 <div class="container-fluid">
   <h2>This is the main Angular application</h2>
   <div class="row">
-    <mf-angular-a></mf-angular-a>
+    <div class="col">
+      <div class="input-group input-group-sm my-3 px-5">
+        <span class="input-group-text">Send to MF A</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Data to send to MF A"
+          [(ngModel)]="mf_A_input"
+        />
+      </div>
+      <div class="input-group input-group-sm my-3 px-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="No data recieved from MF A"
+          readonly
+          [ngModel]="mf_A_output"
+        />
+        <span class="input-group-text">Recieved from MF</span>
+      </div>
+
+      <mf-angular-a
+        [inputMsg]="mf_A_input"
+        (outputMsg)="mf_A_output = $any($event).detail"
+      ></mf-angular-a>
+    </div>
+    <div class="col">
+      <div class="input-group input-group-sm my-3 px-5">
+        <span class="input-group-text">Send to MF B</span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Data to send to MF B"
+          [(ngModel)]="mf_B_input"
+        />
+      </div>
+      <div class="input-group input-group-sm my-3 px-5">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="No data recieved from  MF"
+          readonly
+          [ngModel]="mf_B_output"
+        />
+        <span class="input-group-text">Recieved from MF B</span>
+      </div>
+
+      <mf-angular-b
+        [inputMsg]="mf_B_input"
+        (outputMsg)="mf_B_output = $any($event).detail"
+      ></mf-angular-b>
+    </div>
   </div>
   <div class="row"><router-outlet></router-outlet></div>
 </div>

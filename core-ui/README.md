@@ -35,3 +35,5 @@ environment.initiallyLoadedMicroFrontends
 deps: [StartupService],
 multi: true,
 },
+
+Data communication between this container app and the MF can be done by using @Input and @Output decorators in the angular microfrontend

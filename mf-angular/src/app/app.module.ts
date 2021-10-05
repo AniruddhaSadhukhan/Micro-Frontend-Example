@@ -1,5 +1,6 @@
 import { Injector, NgModule } from '@angular/core';
 import { createCustomElement } from '@angular/elements';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -8,7 +9,7 @@ import { MfAngularBComponent } from './mf-angular-b/mf-angular-b.component';
 
 @NgModule({
   declarations: [AppComponent, MfAngularAComponent, MfAngularBComponent],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [],
   entryComponents: [MfAngularAComponent, MfAngularBComponent],
 })
@@ -20,5 +21,10 @@ export class AppModule {
       injector: this.injector,
     });
     customElements.define('mf-angular-a', mf_A);
+
+    const mf_B = createCustomElement(MfAngularBComponent, {
+      injector: this.injector,
+    });
+    customElements.define('mf-angular-b', mf_B);
   }
 }

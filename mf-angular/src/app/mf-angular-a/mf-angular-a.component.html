@@ -1,3 +1,27 @@
-<div class="container">
-  <h3>mf-angular-a works!</h3>
+<div class="container p-2">
+  <h3>mf-angular-a</h3>
+  <p>
+    This is a Angular Micro-Frontend & the script for this is loaded during
+    initialization of the container app
+  </p>
+  <div class="input-group input-group-sm my-3 px-5">
+    <span class="input-group-text">Send to Parent</span>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Data to send to Parent"
+      ngModel
+      (ngModelChange)="outputMsg.emit($event)"
+    />
+  </div>
+  <div class="input-group input-group-sm my-3 px-5">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="No data recieved from  Parent"
+      readonly
+      [ngModel]="inputMsg"
+    />
+    <span class="input-group-text">Recieved from Parent</span>
+  </div>
 </div>

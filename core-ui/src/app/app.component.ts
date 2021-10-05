@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'core-ui';
+  mf_A_input = '';
+  mf_A_output = '';
+  mf_B_input = '';
+  mf_B_output = '';
 
   // constructor(private startupService: StartupService) {}
 
