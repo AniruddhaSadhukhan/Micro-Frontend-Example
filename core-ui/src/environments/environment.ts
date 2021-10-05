@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  initiallyLoadedMicroFrontends: ['mf-angular', 'mf-angular2'],
+  initiallyLoadedMicroFrontends: ['mf-angular'],
   microFrontends: {
     'mf-angular': {
       name: 'mf-angular',
       localPort: 4201,
-      includeStyle: true,
-      // mfUrl : "http://abc"
+      includeStyle: false,
+      // mfUrl: 'https://microfrontend-mf-angular.surge.sh',
     },
   },
 };
