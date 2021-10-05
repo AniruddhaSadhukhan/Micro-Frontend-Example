@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  microFrontends: {
+    'mf-angular': {
+      name: 'mf-angular',
+      localPort: 4201,
+      includeStyle: true,
+      // mfUrl : "http://abc"
+    },
+  },
 };
 
 /*
