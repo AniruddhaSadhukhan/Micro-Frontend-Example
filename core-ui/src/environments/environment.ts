@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false,
+  initiallyLoadedMicroFrontends: ['mf-angular', 'mf-angular2'],
   microFrontends: {
     'mf-angular': {
       name: 'mf-angular',

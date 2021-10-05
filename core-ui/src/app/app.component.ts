@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StartupService } from './startup.service';
+// import { StartupService } from './startup.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ import { StartupService } from './startup.service';
 export class AppComponent implements OnInit {
   title = 'core-ui';
 
-  constructor(private startupService: StartupService) {}
+  // constructor(private startupService: StartupService) {}
 
   ngOnInit(): void {
-    this.startupService.loadMicroFrontends(['mf-angular']);
+    // this.startupService.loadMicroFrontends(['mf-angular']);
   }
 }
