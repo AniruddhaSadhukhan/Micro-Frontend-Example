@@ -2,9 +2,10 @@
   <h3>mf-angular-a</h3>
   <p>
     This is a Angular Micro-Frontend & the script for this is loaded during
-    initialization of the container app
+    initialization of the container app. MF also supports communication between
+    the container and itself.
   </p>
-  <div class="input-group input-group-sm my-3 px-5">
+  <div class="input-group input-group-sm mt-3 mb-1 px-5">
     <span class="input-group-text">Send to Parent</span>
     <input
       type="text"
@@ -14,7 +15,7 @@
       (ngModelChange)="outputMsg.emit($event)"
     />
   </div>
-  <div class="input-group input-group-sm my-3 px-5">
+  <div class="input-group input-group-sm mb-3 px-5">
     <input
       type="text"
       class="form-control"

@@ -7,5 +7,10 @@ export const environment = {
       includeStyle: false,
       mfUrl: 'https://microfrontend-mf-angular.surge.sh',
     },
+    'mf-angular-ondemand': {
+      name: 'mf-angular-ondemand',
+      includeStyle: false,
+      mfUrl: 'https://microfrontend-mf-angular-ondemand.surge.sh',
+    },
   },
 };

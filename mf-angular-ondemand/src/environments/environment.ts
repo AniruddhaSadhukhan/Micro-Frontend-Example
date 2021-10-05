@@ -3,22 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  initiallyLoadedMicroFrontends: ['mf-angular'],
-  microFrontends: {
-    'mf-angular': {
-      name: 'mf-angular',
-      localPort: 4201,
-      includeStyle: false,
-      mfUrl: 'https://microfrontend-mf-angular.surge.sh',
-    },
-    'mf-angular-ondemand': {
-      name: 'mf-angular-ondemand',
-      localPort: 4202,
-      includeStyle: false,
-      mfUrl: 'https://microfrontend-mf-angular-ondemand.surge.sh',
-    },
-  },
+  production: false
 };
 
 /*

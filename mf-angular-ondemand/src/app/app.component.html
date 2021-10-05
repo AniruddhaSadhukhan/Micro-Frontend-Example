@@ -1,0 +1,40 @@
+<div class="container p-2">
+  <h3>mf-angular-ondemand</h3>
+  <p>
+    This is a Angular Micro-Frontend & the script for this is loaded only when
+    this component is loaded when the route /ondemand is hit
+  </p>
+  <div class="row justify-content-center my-2">
+    <div class="col-auto">
+      <button
+        class="btn btn-outline-primary btn-sm"
+        routerLink="/ondemand"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="btn-primary"
+      >
+        Load / inside MF
+      </button>
+    </div>
+    <div class="col-auto">
+      <button
+        class="btn btn-outline-primary btn-sm"
+        routerLink="/ondemand/a"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="btn-primary"
+      >
+        Load /a inside MF
+      </button>
+    </div>
+    <div class="col-auto">
+      <button
+        class="btn btn-outline-primary btn-sm"
+        routerLink="/ondemand/b"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="btn-primary"
+      >
+        Load /b inside MF
+      </button>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

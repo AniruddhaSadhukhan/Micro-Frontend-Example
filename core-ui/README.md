@@ -37,3 +37,17 @@ multi: true,
 },
 
 Data communication between this container app and the MF can be done by using @Input and @Output decorators in the angular microfrontend
+
+Mf Angular Ondemand is loaded only when the url hits /ondemand
+
+For that a route has been added in app-routing.module.ts:
+{
+path: 'ondemand',
+pathMatch: 'prefix',
+children: [{ path: '**', component: OndemandComponent }],
+}
+
+In the OndemandComponent, the mf has been loaded in ngOnInit:
+this.startupService.loadMicroFrontends(['mf-angular-ondemand']);
+
+and the mf tag has been added in the html

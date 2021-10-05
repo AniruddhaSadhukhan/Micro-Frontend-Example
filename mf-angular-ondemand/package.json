@@ -1,9 +1,8 @@
 {
-  "name": "core-ui",
+  "name": "mf-angular-ondemand",
   "version": "0.0.0",
   "scripts": {
-    "serve": "ng serve",
-    "build": "ng build"
+    "serve": "./run-mf.sh"
   },
   "private": true,
   "dependencies": {
@@ -11,10 +10,13 @@
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
     "@angular/core": "~12.2.0",
+    "@angular/elements": "^12.2.8",
     "@angular/forms": "~12.2.0",
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "document-register-element": "^1.7.2",
+    "ngx-build-plus": "^12.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

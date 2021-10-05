@@ -10,9 +10,10 @@ import { environment } from 'src/environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StartupService } from './startup.service';
+import { OndemandComponent } from './ondemand/ondemand.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, OndemandComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
     {
