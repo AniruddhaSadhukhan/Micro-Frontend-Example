@@ -8,13 +8,13 @@ export const environment = {
   microFrontends: {
     'mf-angular': {
       name: 'mf-angular',
-      localPort: 4201,
+      // localPort: 4201, // Uncomment this if running MF locally
       includeStyle: false,
       mfUrl: 'https://microfrontend-mf-angular.surge.sh',
     },
     'mf-angular-ondemand': {
       name: 'mf-angular-ondemand',
-      localPort: 4202,
+      // localPort: 4202, // Uncomment this if running MF locally
       includeStyle: false,
       mfUrl: 'https://microfrontend-mf-angular-ondemand.surge.sh',
     },
