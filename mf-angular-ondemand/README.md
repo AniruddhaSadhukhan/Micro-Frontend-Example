@@ -1,6 +1,8 @@
 # Angular Micro-Frontend Ondemand with internal routing
 
-Sample Angular Micro-Frontend project which is loaded only during initialisation of a particular component of the container app on demand basis. Internal Routing is also there in this Micro-Frontend.  
+Sample Angular Micro-Frontend project which is loaded only during initialisation of a particular component of the container app on demand basis. Internal Routing is also there in this Micro-Frontend.
+
+&nbsp;
 This has 1 micro-frontend:
 
 1.  _mf-angular-ondemand_
@@ -69,7 +71,7 @@ This has 1 micro-frontend:
   ng build --output-hashing none --single-bundle true --watch true  &
   PID="$!"
 
-  npx http-server "./dist/" --cors="*" --gzip=true --port=4201 $1 -c-1
+  npx http-server "./dist/" --cors="*" --gzip=true --port=4202 $1 -c-1
   PID0="$!"
 
   trap  "kill $PID"  exit INT
@@ -95,13 +97,15 @@ This has 1 micro-frontend:
   ```
 
 &nbsp;
-The micro-frontend will now start running on port 4201 (specified in `run-mf.sh`) on watch mode.
+The micro-frontend will now start running on port 4202 (specified in `run-mf.sh`) on watch mode.
 
 &nbsp;
 
 > Note: Data communication between the container app and this micro-frontend can be
 > done by using **_@Input_** and **_@Output_** decorators in the angular
 > micro-frontend components
+
+&nbsp;
 
 ## Internal Routing
 
