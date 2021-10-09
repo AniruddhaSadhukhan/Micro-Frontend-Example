@@ -15,7 +15,7 @@ This has 2 micro-frontends:
   ng new mf-angular
   ```
 
-  &nbsp;
+&nbsp;
 
 - Now add these 2 dependencies needed for Micro-frontend:
 
@@ -29,7 +29,8 @@ This has 2 micro-frontends:
 > change the `angular.json` and `ng add @angular/material` will then fail
 > to automatically make changes to the `angular.json` later and you have
 > to then do the changes manually.
-> &nbsp;
+
+&nbsp;
 
 - After that add new components
 
@@ -38,7 +39,7 @@ This has 2 micro-frontends:
   ng g c mf-angular-b
   ```
 
-  &nbsp;
+&nbsp;
 
 - Now, in `app.module.ts:`
 
@@ -87,7 +88,7 @@ This has 2 micro-frontends:
   },
   ```
 
-  &nbsp;
+&nbsp;
 
 - Finally to run the Micro-frontend, just run
 
@@ -95,8 +96,8 @@ This has 2 micro-frontends:
       npm run serve
       ```
 
-  &nbsp;
-  The micro-frontend will now start running on port 4201 (specified in `run-mf.sh`) on watch mode.
+&nbsp;
+The micro-frontend will now start running on port 4201 (specified in `run-mf.sh`) on watch mode.
 
 &nbsp;
 
