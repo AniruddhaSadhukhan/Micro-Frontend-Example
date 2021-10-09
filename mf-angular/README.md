@@ -15,6 +15,8 @@ This has 2 micro-frontends:
   ng new mf-angular
   ```
 
+  &nbsp;
+
 - Now add these 2 dependencies needed for Micro-frontend:
 
   ```bash
@@ -27,6 +29,7 @@ This has 2 micro-frontends:
 > change the `angular.json` and `ng add @angular/material` will then fail
 > to automatically make changes to the `angular.json` later and you have
 > to then do the changes manually.
+> &nbsp;
 
 - After that add new components
 
@@ -34,6 +37,8 @@ This has 2 micro-frontends:
   ng g c mf-angular-a
   ng g c mf-angular-b
   ```
+
+  &nbsp;
 
 - Now, in `app.module.ts:`
 
@@ -81,6 +86,8 @@ This has 2 micro-frontends:
   	"serve":  "./run-mf.sh"
   },
   ```
+
+  &nbsp;
 
 - Finally to run the Micro-frontend, just run
 
