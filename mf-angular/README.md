@@ -92,9 +92,9 @@ This has 2 micro-frontends:
 
 - Finally to run the Micro-frontend, just run
 
-      ```bash
-      npm run serve
-      ```
+  ```bash
+  npm run serve
+  ```
 
 &nbsp;
 The micro-frontend will now start running on port 4201 (specified in `run-mf.sh`) on watch mode.
