@@ -2,7 +2,7 @@
 
 An example of Micro-Frontend architecture using Angular and React
 
-Live Site : https://ani-microfrontend.surge.sh/
+**Live Site** : *https://ani-microfrontend.surge.sh*
 
 This repo consists of the following projects:
 
